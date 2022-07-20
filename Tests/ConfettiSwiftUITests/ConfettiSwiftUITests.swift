@@ -3,6 +3,7 @@ import XCTest
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 final class ConfettiSwiftUITests: XCTestCase {
     @State var counter = 0
     

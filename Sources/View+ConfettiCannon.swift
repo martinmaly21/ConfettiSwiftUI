@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 public extension View {
     
     /// renders configurable confetti animaiton
@@ -42,6 +43,7 @@ public extension View {
     ///   - radius: explosion radius
     ///   - repetitions: number of repetitions of the explosion
     ///   - repetitionInterval: duration between the repetitions
+    ///
     ///
     @ViewBuilder func confettiCannon(
         counter: Binding<Int>,

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 public struct SlimRectangle: Shape {
     public func path(in rect: CGRect) -> Path {
         var path = Path()
@@ -20,6 +21,7 @@ public struct SlimRectangle: Shape {
     }
 }
 
+@available(iOS 14.0, *)
 struct SlimRectangle_Previews: PreviewProvider {
     static var previews: some View {
         SlimRectangle()

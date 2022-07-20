@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
 public enum ConfettiType:CaseIterable, Hashable {
     
     public enum Shape {
@@ -20,7 +21,7 @@ public enum ConfettiType:CaseIterable, Hashable {
     case shape(Shape)
     case text(String)
     case sfSymbol(symbolName: String)
-    
+
     public var view:AnyView{
         switch self {
         case .shape(.square):
@@ -238,6 +239,7 @@ struct ConfettiView: View{
     
 }
 
+@available(iOS 14.0, *)
 struct ConfettiAnimationView: View {
     @State var shape: AnyView
     @State var color: Color
@@ -268,6 +270,7 @@ struct ConfettiAnimationView: View {
     }
 }
 
+@available(iOS 14.0, *)
 class ConfettiConfig: ObservableObject {
     internal init(num: Int, shapes: [AnyView], colors: [Color], confettiSize: CGFloat, rainHeight: CGFloat, fadesOut: Bool, opacity: Double, openingAngle:Angle, closingAngle:Angle, radius:CGFloat, repetitions:Int, repetitionInterval:Double) {
         self.num = num

@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "ConfettiSwiftUI",
     platforms: [
-        .iOS(.v14),
+        .iOS(.v12),
         .macOS(.v11),
         .tvOS(.v14),
         .watchOS(.v7)
